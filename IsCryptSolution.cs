@@ -10,7 +10,6 @@ namespace CodeSignal
     {
         static bool isCryptSolution(string[] crypt, char[][] solution)
         {
-
             Dictionary<char, int> dict = new Dictionary<char, int>();
             foreach (var item in solution)
             {
@@ -31,10 +30,7 @@ namespace CodeSignal
                 }
                 string tempString = sb.ToString();
                 char[] tempCharArray = tempString.ToCharArray();
-
                 if (checkLeadingZeroes(tempCharArray)) return false;
-
-
                 numList.Add(Convert.ToDouble(tempString));
             }
 
@@ -43,7 +39,6 @@ namespace CodeSignal
                 return true;
             }
             return false;
-
         }
 
         static bool checkLeadingZeroes(char[] ch)
@@ -52,7 +47,6 @@ namespace CodeSignal
             {
                 return false;
             }
-
             if (ch[0] != '0')
             {
                 return false;
